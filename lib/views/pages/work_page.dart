@@ -10,6 +10,7 @@ class WorkPage extends StatefulWidget {
 class _WorkPageState extends State<WorkPage> {
   TextEditingController controller = TextEditingController();
   bool? isChecked = true;
+  bool? isChecked1 = true;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -46,10 +47,10 @@ class _WorkPageState extends State<WorkPage> {
         ),
         Checkbox(
           tristate: true,
-          value: isChecked,
+          value: isChecked1,
           onChanged: (bool? value) {
             setState(() {
-              isChecked = value;
+              isChecked1 = value;
             });
           },
         ),
